@@ -88,8 +88,14 @@ main {
     margin-top: -4rem;
     margin-bottom: .5rem;
 }
-.name {
-    margin-bottom: 1rem;
+
+.age {
+    margin-left: .5rem;
+    color: var(--gray-blue);
+}
+
+.country {
+    color: var(--dark-gray);
 }
 
 .stats {
