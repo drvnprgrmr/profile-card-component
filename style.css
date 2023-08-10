@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+
+    --card-radius: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+
+    background: var(--dark-cyan);
+}
+
+.body-overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    position: absolute;
+    z-index: -10;
+}
+.bg-top {
+    top: 0px;
+    left: 0px;
+    transform: translate(-287px, -495px);
+}
+
+.bg-bottom {
+    bottom: 0px;
+    right: 0px;
+    transform: translate(230px, 630px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: var(--card-radius);
+    background-color: var(--white);
+
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+.profile-img {
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -50%);
+}
+
+.profile-img img {
+    border: 5px solid var(--white);
+    border-radius: 100%;
+}
+
+.profile-bg {
+    display: flex;
+}
+.profile-bg img {
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.bio {
+    margin-top: -4rem;
+    margin-bottom: .5rem;
+}
+.name {
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid var(--dark-gray);
+    padding: 1.5rem 0;
+}
+
+.stat p {
+    margin: 0;
+}
+
+.stat-text {
+    color: var(--dark-gray);
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
